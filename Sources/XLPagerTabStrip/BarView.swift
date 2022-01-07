@@ -22,6 +22,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
+import UIKit
 import Foundation
 
 open class BarView: UIView {
@@ -89,3 +91,4 @@ open class BarView: UIView {
         updateSelectedBarPosition(with: false)
     }
 }
+#endif

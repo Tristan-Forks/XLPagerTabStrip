@@ -22,6 +22,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
+import UIKit
 import Foundation
 
 public struct SegmentedPagerTabStripSettings {
@@ -109,3 +111,4 @@ open class SegmentedPagerTabStripViewController: PagerTabStripViewController, Pa
         shouldUpdateSegmentedControl = true
     }
 }
+#endif

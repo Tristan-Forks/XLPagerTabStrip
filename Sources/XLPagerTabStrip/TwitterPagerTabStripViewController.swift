@@ -22,6 +22,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
+import FXPageControl
+import UIKit
 import Foundation
 
 public struct TwitterPagerTabStripSettings {
@@ -232,3 +235,4 @@ open class TwitterPagerTabStripViewController: PagerTabStripViewController, Page
         return navigationController.map { $0.navigationBar.convert($0.navigationBar.center, to: titleView) }?.x
     }
 }
+#endif

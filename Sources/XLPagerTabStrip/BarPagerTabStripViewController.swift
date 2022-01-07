@@ -22,6 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
 import Foundation
 import UIKit
 
@@ -96,3 +97,4 @@ open class BarPagerTabStripViewController: PagerTabStripViewController, PagerTab
         barView.moveTo(index: toIndex, animated: true)
     }
 }
+#endif

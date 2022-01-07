@@ -22,6 +22,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if canImport(UIKit)
+import UIKit
 import Foundation
 
 // MARK: Protocols
@@ -394,3 +396,4 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
     internal var isViewAppearing = false
 
 }
+#endif
